@@ -1,0 +1,12 @@
+<view class="remember-wrap">
+  <view class='flex-wrap top-flex'>
+    <view class='flex-item num1'>{{ Nums }} 位 </view>
+    <view class='flex-item num2'>{{ repeatNum }} 次 </view>
+  </view>
+  <view class="content">{{ randNum }}</view>
+  <view class='flex-wrap content-flex'>
+    <view class='flex-item prev' bindtap="removeNum">减一位</view>
+    <view class='flex-item fresh'bindtap="freshNum">再次</view>
+    <view class='flex-item next' bindtap="addeNum">加一位</view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<view class="money-note">
+<!--
+  <view class="nav-tab">
+    <view class="tab-item {{ idx==1?'active':'' }}">写入</view>
+    <view class="tab-item {{ idx==2?'active':'' }}">统计</view>
+  </view>
+  -->
+  <view class="content-wrap {{ idx==1?'active':'' }}">
+    <view class="money-total flex-wrap">
+      <view class="flex-item income">
+        <view class="word">{{ income }}</view>
+        <view class="txt">{{ month }}月收入</view>
+      </view>
+      <view class="flex-item used">
+        <view class="word">{{ used }}</view>
+        <view class="txt">{{ month }}月支出</view>
+      </view>
+    </view>
+    <view class="kind-wrap" catchtap="addTag">
+      <view class="item" wx:for="{{ tagList }}">
+        <view class="icon-mask" data-icon="{{ item.icon }}" data-txt="{{ item.txt }}"></view>
+        <image src="{{ item.icon }}" class="icons" mode="aspectFit" />
+        <view class="icon-word">{{ item.txt }}</view>
+      </view>
+    </view>
+    <view class="inp-wrap flex-wrap" wx:if="{{ isShow }}">
+      <view class="flex-item icon-wrap">
+        <image class="icon-img" src="{{ selectImg }}" />
+      </view>
+      <input type="digit" placeholder="请输入金额" auto-focus class="flex-item inp-item" bindblur="focusInp" />
+      <button class="flex-item send-btn" bindtap="sendData">确定</button>
+    </view>
+  </view>
+  <!--
+  <view class="content-wrap {{ idx==2?'active':'' }}">
+  </view>
+  -->
+</view>

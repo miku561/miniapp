@@ -1,0 +1,65 @@
+.emoji-list,.record-text{
+  -webkit-overflow-scrolling: touch;
+  margin: 50rpx auto;
+  width: 98%;
+  max-height: 1200rpx;
+  overflow-y: scroll;
+  overflow-x: hidden
+}
+.emoji-item{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+  margin-bottom: 50rpx;
+  width: 32%;
+}
+.emoji-item:nth-child(even){
+  margin-right: 0;
+}
+.emoji-item .icons{
+  width: 100%;
+  height: 180rpx;
+}
+.emoji-item .txt{
+  font-size: 32rpx;
+}
+.emotion-state{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.record-text{
+  width: 80%;
+}
+.textarea{
+  padding: 10rpx;
+  border:1rpx solid #666;
+  border-radius: 20rpx;
+  width: 95%;
+}
+.content-wrap{
+  display: block;
+}
+.record-text .sub-btn{
+  margin-top: 50rpx;
+  background: #333;
+  color: #fff;
+}
+.infos{
+  position: relative;
+  margin: 0 20rpx 20rpx;
+  height: 50rpx;
+}
+.infos .title{
+  font-size: 36rpx;
+}
+.read-more{
+  position: absolute;
+  right: 0;
+  top: 8rpx;
+  font-size: 28rpx;
+}

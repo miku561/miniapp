@@ -1,0 +1,21 @@
+<view class="emoji-list" wx:if="{{ !isText }}">
+  <view class="infos">
+    <text class="title">选择表情</text>
+    <text class="read-more" bindtap="showMore">查看更多 ></text>
+  </view>
+  <view class='emoji-item' wx:for="{{ emojiData }}" wx:for-index="idx" data-index="{{idx}}" data-id="{{ item.id }}" data-txt="{{ item.txt }}" data-image="{{ item.url }}" bindtap="recordText">
+    <image src="{{ item.url }}" class="icons" mode="aspectFit" />
+    <text class="txt">{{ item.txt }}</text>
+  </view>
+</view>
+
+<view class="record-text" wx:if="{{ isText }}">
+  <view class="emotion-state" bindtap="cancel">
+    <image src="{{ nowImage }}" mode="aspectFit" />
+    <text class="txt">{{ nowText }}</text>
+  </view>
+  <view class="content-wrap">
+    <textarea placeholder="有什么想说的吗？" class="textarea" bindinput='inpListener'/>
+  </view>
+  <button bindtap="subMit" class="sub-btn">提交</button>
+</view>

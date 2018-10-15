@@ -1,0 +1,28 @@
+<view class="modular">
+  <view class='flex-wrap icon-wrap'>
+    <view class='flex-item'>
+      <text class='colorIcon red'></text>
+    </view>
+    <view class='flex-item'>
+      <text class='colorIcon green'></text>
+    </view>
+    <view class='flex-item'>
+      <text class='colorIcon blue'></text>
+    </view>
+  </view>
+  <view class='flex-wrap inp-wrap'>
+    <view class='flex-item'>
+      <input type='number' placeholder='R' class='inp' bindinput='changeInp' value="{{ r }}" maxlength="3" auto-focus  data-id='1'  />
+    </view>
+    <view class='flex-item'>
+      <input type='number' placeholder='G' class='inp' bindinput='changeInp' value="{{ g }}" maxlength="3"  data-id='2'  />
+    </view>
+    <view class='flex-item'>
+      <input type='number' placeholder='B' class='inp' bindinput='changeInp' value="{{ b }}" maxlength="3"  data-id='3'  />
+    </view>
+  </view>
+  <button class="changeBtn" hover-class="redBtn" bindtap="changeOpt">转换</button>
+  <view class='result'>
+    <text class='result-txt' style="color: {{ bgColor }}">#{{ result }} <text class="result-block" style="background: {{ bgColor }}"></text></text>
+  </view>
+</view>

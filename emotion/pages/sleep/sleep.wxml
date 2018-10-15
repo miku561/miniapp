@@ -1,0 +1,9 @@
+<view class="mditation">
+  <view class="rain">
+    <view class="state">{{ musicType }}</view>
+    <view class="lastTime">{{ lastTime }}</view>
+  </view>
+  <view class="startBtn">
+    <text class="btn" bindtap="startMusic">{{ state }}</text>
+  </view>
+</view>

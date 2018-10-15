@@ -1,0 +1,10 @@
+<view class="showList" bindtap="jumpDetail">
+  <view wx:for="{{ dataList }}" class="data-item" wx:for-index="idx">
+    <view class="mask" data-id="{{ item.id }}"></view>
+    <view class="flex-wrap">
+      <!-- <text class="nums">{{ idx + 1 }}</text> -->
+      <view class="flex-item news-title">{{ item.title }}</view>
+      <image src="{{ item.images[0] }}" class="flex-item imgs" mode="aspectFit" />
+    </view>
+  </view>
+</view>

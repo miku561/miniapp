@@ -1,0 +1,47 @@
+<view class="index-wrap">
+  <view class="avatar-wrap">
+    <open-data type="userAvatarUrl" class="avatar"></open-data>
+    <open-data type="userNickName" class="nickName"></open-data>
+  </view>
+  <view class="modular">
+    <!--
+    <view class='modular-content'>
+      <view class="modular-item emotion" data-url="../emotion/emotion" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.comdn.com/FudmFjiEVXOVgLpDAWoyw5j3Cet6" class="icons" mode="aspectFit" />
+        <text class="modular-title">情绪记录</text>
+      </view>
+    </view>
+    -->
+    <view class="modular-content">
+      <view class="modular-item meditation" data-url="../meditation/meditation" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.com/FkTRG_y_k2UBcaqOwQ_hSic1KYmG" class="icons" mode="aspectFit" />
+        <text class="modular-title">冥想练习</text>
+      </view>
+      <view class="modular-item meditation" data-url="../remember/remember" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.com/FoV32CxhHQtav0keRFdE2GeAKgXF" class="icons" mode="aspectFit" />
+        <text class="modular-title">记忆练习</text>
+      </view>
+      <!-- <view class="modular-item rgbToHx" data-url="../rgbToHx/rgbToHx" bindtap="jump">
+        <image src='http://image.xuexiwangzhe.comdn.com/FtrV1O50krLzNs8bbFw26L19hTsm' class="icons" mode='aspectFit'></image>
+        <text class="modular-title">RGB转十六进制</text>
+      </view> -->
+    </view>
+    <view class="modular-content">
+       <view class="modular-item speak-exercise" data-url="../speakExercise/speakExercise" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.com/Fm2DnXHYHSZnBs8vDXVemvYsu6Gn" class="icons" mode="aspectFit" />
+        <text class="modular-title">知乎日报</text>
+      </view>
+      <!-- <view class="modular-item meditation" data-url="../sleep/sleep" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.comdn.com/FsRqbRRTrylPW_PYFIqu-JFzXJrM" class="icons" mode="aspectFit" />
+        <text class="modular-title">睡眠</text>
+      </view> -->
+    </view>
+    <view class="modular-content ">
+      <!-- <view class="modular-item money-note" data-url="../moneyNote/moneyNote" bindtap="jump">
+        <image src="http://image.xuexiwangzhe.comdn.com/FvA9nUMF_dnTS1DebflD5e4epym0" class="icons" mode="aspectFit" />
+        <text class="modular-title">流水账本</text>
+      </view> -->
+     
+    </view>
+  </view>
+</view>

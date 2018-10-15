@@ -1,0 +1,43 @@
+<view class="detail-wrap">
+<!--
+  <view class="index-wrap">
+    <view class="flex-item {{ idx == 1?'active':''}}" data-idx="1" bindtap="select">日期选择</view>
+    <view class="flex-item {{ idx == 2?'active':''}}" data-idx="2" bindtap="select">记录统计</view>
+  </view>
+  -->
+  <view class="content-wrap {{ idx == 1?'active':''}}">
+    <view class='wrap'>
+      <view class='date-show'>
+        <view class='lt-arrow' bindtap='lastMonth'></view>
+        {{year}}年{{month}}月
+        <view class='rt-arrow' bindtap='nextMonth'></view>
+      </view>
+    </view>
+    <view class='header'>
+      <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view>
+    </view>
+    <view class='date-box'>
+      <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}' bindtap="showList">			
+        <view class='date-head'>
+          <view>{{item.dateNum}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="emoji-list">
+      <view wx:for="{{ emojiData }}" class="flex-wrap" wx:if="{{ emojiData.length > 0 }}">
+        <view class="flex-item images">
+          <image src="{{ item.imgUrl }}" class="imgs" mode='aspectFit' />
+          <text class="emoji-state">{{ item.state }}</text>
+        </view>
+        <view class="flex-item content">
+          <view class="date">{{ item.date }}</view>
+          <view class="content">{{ item.content }}</view>
+        </view>
+      </view>
+      <view  wx:if="{{ emojiData.length == 0 }}" class="no-content">还没有心情记录哦</view>
+    </view>
+  </view>
+  <view class="content-wrap {{ idx == 2?'active':''}}" >2222
+  </view>
+</view>
+

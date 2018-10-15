@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/remember/remember",
+    "pages/rgbToHx/rgbToHx",
+    "pages/speakExercise/speakExercise",
+    "pages/speakExercise/detail/detail",
+    "pages/moneyNote/moneyNote",
+    "pages/emotion/emotionDetail/emotionDetail",
+    "pages/meditation/meditation",
+    "pages/emotion/emotion",
+    "pages/sleep/sleep"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工具箱",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,64 @@
+.modular{
+  margin: 400rpx auto 0;
+  width: 400rpx;
+  text-align: center
+}
+.modular .colorIcon{
+  display: inline-block;
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+}
+.modular .colorIcon.red{
+  background: #ff6473 
+}
+.modular .colorIcon.green{
+  background: #a6ed8e 
+}
+.modular .colorIcon.blue{
+  background: #4ab8b8  
+}
+.icon-wrap .flex-item,
+.inp-wrap .flex-item{
+  margin: 0 20rpx;
+}
+.inp-wrap{
+  margin-top: 20rpx;
+}
+.inp-wrap .inp{
+  border-radius: 8rpx;
+  border: 1rpx solid #d0d0d0;
+}
+.changeBtn{
+  margin-top: 100rpx;
+  background: #39c5bb;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+}
+.redBtn{
+  color: #666
+}
+.changeBtn::before,
+.changeBtn::after{
+  border: none
+}
+.result{
+  margin-top: 100rpx;
+  text-align: center
+}
+.result .result-txt{
+  padding:10rpx 30rpx;
+  border-radius: 50rpx;
+  border:1rpx solid #39c5bb;
+  color: #39c5bb;
+}
+.result .result-block{
+  display: inline-block;
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}

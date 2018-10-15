@@ -1,0 +1,32 @@
+page{
+  min-height: 100%;
+  background: #e4f9f5;
+}
+.rain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 300rpx auto 200rpx;
+  border-radius: 50%;
+  border: 1rpx solid #D0D0D0;
+  width: 350rpx;
+  height: 350rpx;
+}
+.state{
+  margin-bottom: 10rpx;
+  font-size: 44rpx;
+}
+.lastTime{
+  font-size: 32rpx;
+}
+.startBtn{
+  text-align: center;
+}
+.startBtn .btn{
+  display: inline-block;
+  padding: 20rpx 60rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #D0D0D0;
+  font-size: 32rpx;
+}
