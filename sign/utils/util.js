@@ -1,12 +1,20 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
+const getStorage = function (val) {
+  wx.getStorage({
+    key: val,
+    success: function(res) {
+      return res
+    }
+  })
+} 
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+const saveStorage = function (key, val) {
+  wx.setStorage({
+    key: key,
+    data: val,
+    success: function (res) {
+      return res
+    }
+  })
 }
 
 const formatNumber = n => {
@@ -15,5 +23,6 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  getStorage,
+  saveStorage
 }

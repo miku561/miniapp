@@ -9,7 +9,16 @@ App({
     // 登录
     wx.login({
       success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        // wx.request({
+        //   url: 'https://www.skyliu.top/bootdo-vms/miniApp/common/login',
+        //   method: 'POST',
+        //   data: {
+        //     code: res.code
+        //   },
+        //   success: function (msg) {
+        //     console.log(msg)
+        //   }
+        // })
       }
     })
     // 获取用户信息
